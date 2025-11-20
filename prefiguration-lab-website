@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Prefiguration Lab</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Header & Navigation -->
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="logo">
+          <span class="logo-mark">PL</span>
+          <span class="logo-text">Prefiguration Lab</span>
+        </div>
+
+        <nav class="main-nav" id="main-nav">
+          <a href="#home">Home</a>
+          <a href="#projects">Projects</a>
+          <a href="#team">Our Team</a>
+          <a href="#podcast">Podcast</a>
+          <a href="#resources">Resources</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <button
+          class="nav-toggle"
+          id="nav-toggle"
+          aria-label="Toggle navigation"
+        >
+          ☰
+        </button>
+      </div>
+    </header>
+
+    <!-- HERO / HOME -->
+    <main>
+      <section id="home" class="section hero">
+        <div class="container hero-inner">
+          <div class="hero-text">
+            <h1>Prefiguration Lab</h1>
+            <p class="tagline">
+              A research collective exploring how organizations can prefigure
+              more sustainable, just futures.
+            </p>
+            <p>
+              We study practices, technologies, and forms of organizing that
+              anticipate the world we want to build — from AI and surveillance
+              to sustainability and social justice.
+            </p>
+            <a href="#projects" class="button">View Our Projects</a>
+          </div>
+
+          <div class="hero-card">
+            <h2>Current Focus</h2>
+            <ul>
+              <li>Clearview AI & surveillance capitalism</li>
+              <li>Sustainability & organizational change</li>
+              <li>Emerging projects & collaborations</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJECTS -->
+      <section id="projects" class="section">
+        <div class="container">
+          <div class="section-heading">
+            <h2>Projects</h2>
+            <p>
+              Our research projects explore how organizational practices shape
+              possible futures.
+            </p>
+          </div>
+
+          <div class="grid projects-grid">
+            <!-- Project 1: Clearview AI -->
+            <article class="card project-card">
+              <h3>Clearview AI & Surveillance</h3>
+              <p>
+                This project examines the implications of facial recognition
+                technologies in everyday organizational contexts, focusing on
+                power, consent, and accountability.
+              </p>
+              <!-- Example PDF link (replace with your own file later) -->
+              <p class="meta">
+                <strong>Project lead:</strong> Prof. [Name]<br />
+                <strong>Status:</strong> In progress
+              </p>
+              <a
+                href="docs/clearview-ai-project.pdf"
+                target="_blank"
+                class="link"
+                rel="noopener noreferrer"
+              >
+                Download project overview (PDF)
+              </a>
+            </article>
+
+            <!-- Project 2: Sustainability -->
+            <article class="card project-card">
+              <h3>Sustainability & Prefiguration</h3>
+              <p>
+                We explore how organizations experiment with sustainable
+                practices today to prefigure low-carbon, socially just futures.
+              </p>
+              <p class="meta">
+                <strong>Project lead:</strong> [Student / Prof Name]<br />
+                <strong>Status:</strong> In progress
+              </p>
+              <a
+                href="docs/sustainability-project.pdf"
+                target="_blank"
+                class="link"
+                rel="noopener noreferrer"
+              >
+                Download project overview (PDF)
+              </a>
+            </article>
+
+            <!-- Project 3: Placeholder -->
+            <article class="card project-card">
+              <h3>[Future Project Title]</h3>
+              <p>
+                Short description of a future or third project goes here. You
+                can update this text once the project details are confirmed.
+              </p>
+              <p class="meta">
+                <strong>Project lead:</strong> [Name]<br />
+                <strong>Status:</strong> Planned
+              </p>
+              <!-- Optional: leave this empty until you have a PDF -->
+              <span class="badge badge-muted">More details coming soon</span>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- OUR TEAM -->
+      <section id="team" class="section section-alt">
+        <div class="container">
+          <div class="section-heading">
+            <h2>Our Team</h2>
+            <p>
+              The Prefiguration Lab brings together a professor and student
+              researchers.
+            </p>
+          </div>
+
+          <div class="grid team-grid">
+            <!-- Professor -->
+            <article class="card team-card">
+              <h3>Prof. [Professor Name]</h3>
+              <p class="role">Principal Investigator</p>
+              <p>
+                [Short bio: research interests, department at the University of
+                Ottawa, and focus within the Prefiguration Lab.]
+              </p>
+              <p class="meta">
+                <a href="mailto:professor@example.com" class="link"
+                  >professor@example.com</a
+                ><br />
+                [Department], University of Ottawa
+              </p>
+            </article>
+
+            <!-- Student 1 -->
+            <article class="card team-card">
+              <h3>[Student Name 1]</h3>
+              <p class="role">Graduate / Undergraduate Researcher</p>
+              <p>
+                [Short bio: program, year, and role in the research lab. For
+                example: works on the Clearview AI project and supports data
+                analysis and literature review.]
+              </p>
+            </article>
+
+            <!-- Student 2 -->
+            <article class="card team-card">
+              <h3>[Student Name 2]</h3>
+              <p class="role">Research Assistant</p>
+              <p>
+                [Short bio: program, research interests, and contributions to
+                sustainability and organizational change projects.]
+              </p>
+            </article>
+
+            <!-- Student 3 -->
+            <article class="card team-card">
+              <h3>[Student Name 3]</h3>
+              <p class="role">Research Assistant</p>
+              <p>
+                [Short bio: program, methods expertise (e.g., qualitative
+                interviews, archives, etc.), and project responsibilities.]
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- PODCAST -->
+      <section id="podcast" class="section">
+        <div class="container">
+          <div class="section-heading">
+            <h2>Podcast</h2>
+            <p>
+              The Prefiguration Lab podcast hosts conversations about
+              organizations, power, and possible futures.
+            </p>
+          </div>
+
+          <div class="podcast-layout">
+            <div class="podcast-player card">
+              <h3>Latest Episode</h3>
+              <!-- Replace the iframe src with your actual podcast embed (Spotify, Apple, etc.) -->
+              <div class="embed-wrapper">
+                <iframe
+                  src="https://open.spotify.com/embed/show/PLACEHOLDER"
+                  width="100%"
+                  height="160"
+                  frameborder="0"
+                  allowtransparency="true"
+                  allow="encrypted-media"
+                >
+                </iframe>
+              </div>
+              <p class="meta">
+                If your podcast is hosted elsewhere, you can replace this embed
+                code or link to the external site.
+              </p>
+            </div>
+
+            <aside class="card podcast-links">
+              <h3>Listen & Subscribe</h3>
+              <ul>
+                <li>
+                  <a
+                    href="https://www.talkingaboutorganizations.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Example: Talking About Organizations</a
+                  >
+                </li>
+                <li>
+                  <a href="#" target="_blank" rel="noopener noreferrer"
+                    >Prefiguration Lab on Spotify (coming soon)</a
+                  >
+                </li>
+                <li>
+                  <a href="#" target="_blank" rel="noopener noreferrer"
+                    >Prefiguration Lab on Apple Podcasts (coming soon)</a
+                  >
+                </li>
+                <li>
+                  <a href="#" target="_blank" rel="noopener noreferrer"
+                    >RSS feed (coming soon)</a
+                  >
+                </li>
+              </ul>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <!-- RESOURCES / PDF LINKS -->
+      <section id="resources" class="section section-alt">
+        <div class="container">
+          <div class="section-heading">
+            <h2>Resources</h2>
+            <p>
+              Reports, working papers, syllabi, and other materials from the
+              Prefiguration Lab.
+            </p>
+          </div>
+
+          <ul className="resource-list">
+            <li>
+              <strong>Lab Overview</strong> —
+              <a
+                href="docs/prefiguration-lab-overview.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                PDF
+              </a>
+            </li>
+            <li>
+              <strong>Clearview AI project brief</strong> —
+              <a
+                href="docs/clearview-ai-brief.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                PDF
+              </a>
+            </li>
+            <li>
+              <strong>Sustainability & prefiguration reading list</strong> —
+              <a
+                href="docs/sustainability-reading-list.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                PDF
+              </a>
+            </li>
+            <!-- Add more items here as needed -->
+          </ul>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact" class="section">
+        <div class="container">
+          <div class="section-heading">
+            <h2>Contact</h2>
+            <p>
+              To learn more about Prefiguration Lab or explore collaboration
+              opportunities, please get in touch.
+            </p>
+          </div>
+
+          <div class="card contact-card">
+            <p>
+              <strong>Email:</strong>
+              <a href="mailto:professor@example.com" class="link">
+                professor@example.com
+              </a>
+            </p>
+            <p>
+              <strong>Institution:</strong><br />
+              [Department Name]<br />
+              University of Ottawa, Ottawa, ON, Canada
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>
+          © <span id="year"></span> Prefiguration Lab · University of Ottawa
+        </p>
+        <p class="footer-small">
+          Built by the Prefiguration Lab research team.
+        </p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
