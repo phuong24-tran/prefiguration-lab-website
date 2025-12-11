@@ -21,36 +21,28 @@ if (yearSpan) {
   yearSpan.textContent = new Date().getFullYear();
 }
 
-// Team: switch active person + bio
-const teamChips = document.querySelectorAll(".team-chip");
-const teamBios = document.querySelectorAll(".team-bio");
+// Team cards: click to highlight + show detail bar
+const personCards = document.querySelectorAll(".team-person-card");
+const detailBlocks = document.querySelectorAll(".team-detail");
 
-teamChips.forEach((chip) => {
-  chip.addEventListener("click", () => {
-    const person = chip.getAttribute("data-person");
-    if (!person) return;
+personCards.forEach((card) => {
+  card.addEventListener("click", () => {
+    const id = card.getAttribute("data-person");
+    if (!id) return;
 
-    // highlight active chip
-    teamChips.forEach((c) => c.classList.remove("active"));
-    chip.classList.add("active");
+    // set active card
+    personCards.forEach((c) => c.classList.remove("active"));
+    card.classList.add("active");
 
-    // show matching bio
-    teamBios.forEach((bio) => {
-      if (bio.getAttribute("data-person") === person) {
-        bio.hidden = false;
+    // show matching detail
+    detailBlocks.forEach((block) => {
+      if (block.getAttribute("data-person") === id) {
+        block.hidden = false;
       } else {
-        bio.hidden = true;
+        block.hidden = true;
       }
     });
   });
 });
 
-// Team: "Connect on LinkedIn" buttons open link
-document.querySelectorAll(".team-connect").forEach((btn) => {
-  btn.addEventListener("click", () => {
-    const link = btn.getAttribute("data-link");
-    if (link) {
-      window.open(link, "_blank", "noopener,noreferrer");
-    }
-  });
-});
+
