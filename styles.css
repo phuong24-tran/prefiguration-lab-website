@@ -333,3 +333,149 @@ body {
     display: flex;
   }
 }
+/* === Our Team – circle layout like Major Tom === */
+
+.team-layout {
+  display: grid;
+  gap: 1.8rem;
+}
+
+/* 3-column grid so prof can sit in the middle */
+.team-grid-circles {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5rem 1.5rem;
+  justify-items: center;
+}
+
+/* Base circle button */
+.team-person {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  text-align: center;
+  max-width: 180px;
+  color: inherit;
+}
+
+.team-photo-wrap {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto 0.6rem;
+  border: 3px solid #e3e3e3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.team-photo-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.team-photo-placeholder {
+  background-color: #f0f0f0;
+  color: #555;
+  font-weight: 600;
+  font-size: 1.8rem;
+}
+
+.team-name {
+  font-weight: 600;
+  margin-bottom: 0.1rem;
+}
+
+.team-role {
+  font-size: 0.85rem;
+  color: #666666;
+}
+
+/* Active state */
+.team-person.active .team-photo-wrap {
+  border-color: #8d0033; /* Telfer-ish red */
+  box-shadow: 0 0 0 3px rgba(141, 0, 51, 0.15);
+}
+
+/* Positioning in grid: prof center, others around */
+.team-person--prof {
+  grid-column: 2 / span 1; /* center first row */
+}
+
+.team-person--adi {
+  grid-column: 1 / span 1;
+}
+
+.team-person--phuong {
+  grid-column: 3 / span 1;
+}
+
+.team-person--camila {
+  grid-column: 1 / span 1;
+}
+
+.team-person--hamza {
+  grid-column: 3 / span 1;
+}
+
+/* Bio panel below grid */
+
+.team-bio-panel {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.team-bio h3 {
+  margin-bottom: 0.25rem;
+}
+
+.team-bio-short {
+  font-size: 0.95rem;
+  color: #444444;
+}
+
+.team-bio-long {
+  display: none;
+  margin-top: 0.4rem;
+  font-size: 0.95rem;
+  color: #444444;
+}
+
+.team-bio.show-long .team-bio-long {
+  display: block;
+}
+
+.team-learn {
+  margin-top: 0.6rem;
+  padding: 0.3rem 0.9rem;
+  font-size: 0.8rem;
+  border-radius: 999px;
+  border: 1px solid #8d0033;
+  background-color: #ffffff;
+  color: #8d0033;
+  cursor: pointer;
+}
+
+.team-learn:hover {
+  background-color: #8d0033;
+  color: #ffffff;
+}
+
+/* Mobile tweaks */
+@media (max-width: 768px) {
+  .team-grid-circles {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .team-person--prof {
+    grid-column: 1 / span 2; /* full row on mobile */
+  }
+
+  .team-person--phuong,
+  .team-person--hamza {
+    grid-column: auto;
+  }
+}
