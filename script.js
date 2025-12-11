@@ -21,37 +21,36 @@ if (yearSpan) {
   yearSpan.textContent = new Date().getFullYear();
 }
 
-// Team: click circles to switch bio
-const personButtons = document.querySelectorAll(".team-person");
-const bioBlocks = document.querySelectorAll(".team-bio");
+// Team: switch active person + bio
+const teamChips = document.querySelectorAll(".team-chip");
+const teamBios = document.querySelectorAll(".team-bio");
 
-personButtons.forEach((btn) => {
-  btn.addEventListener("click", () => {
-    const id = btn.getAttribute("data-person");
-    if (!id) return;
+teamChips.forEach((chip) => {
+  chip.addEventListener("click", () => {
+    const person = chip.getAttribute("data-person");
+    if (!person) return;
 
-    // highlight selected circle
-    personButtons.forEach((b) => b.classList.remove("active"));
-    btn.classList.add("active");
+    // highlight active chip
+    teamChips.forEach((c) => c.classList.remove("active"));
+    chip.classList.add("active");
 
     // show matching bio
-    bioBlocks.forEach((block) => {
-      if (block.getAttribute("data-person") === id) {
-        block.hidden = false;
+    teamBios.forEach((bio) => {
+      if (bio.getAttribute("data-person") === person) {
+        bio.hidden = false;
       } else {
-        block.hidden = true;
+        bio.hidden = true;
       }
     });
   });
 });
 
-// "Learn more" toggles
-bioBlocks.forEach((block) => {
-  const learnBtn = block.querySelector(".team-learn");
-  if (!learnBtn) return;
-
-  learnBtn.addEventListener("click", () => {
-    const isLong = block.classList.toggle("show-long");
-    learnBtn.textContent = isLong ? "Show less" : "Learn more";
+// Team: "Connect on LinkedIn" buttons open link
+document.querySelectorAll(".team-connect").forEach((btn) => {
+  btn.addEventListener("click", () => {
+    const link = btn.getAttribute("data-link");
+    if (link) {
+      window.open(link, "_blank", "noopener,noreferrer");
+    }
   });
 });
