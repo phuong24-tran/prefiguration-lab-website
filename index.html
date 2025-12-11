@@ -137,7 +137,7 @@
         </div>
       </section>
 
-               <!-- OUR TEAM -->
+          <!-- OUR TEAM -->
       <section id="team" class="section section-alt">
         <div class="container">
           <div class="section-heading">
@@ -148,172 +148,264 @@
             </p>
           </div>
 
-          <!-- Simple horizontal strip of people -->
-          <div class="team-strip" aria-label="Prefiguration Lab members">
-            <button
-              class="team-chip active"
-              data-person="mathieu"
-              type="button"
-            >
-              <div class="team-chip-avatar">
-                <img
-                  src="1725373874280.jpeg"
-                  alt="Portrait of Prof. Mathieu Bouchard"
-                />
+          <!-- People grid: 5 vertical cards -->
+          <div class="grid team-grid team-grid-people">
+            <!-- Prof -->
+            <article class="card team-person-card active" data-person="mathieu">
+              <div class="team-person-inner">
+                <div class="team-person-photo-box">
+                  <img
+                    src="1725373874280.jpeg"
+                    alt="Portrait of Prof. Mathieu Bouchard"
+                  />
+                </div>
+                <div class="team-person-text">
+                  <h3>Prof. Mathieu Bouchard</h3>
+                  <p class="role">Principal Investigator</p>
+                </div>
               </div>
-              <div class="team-chip-text">
-                <span class="team-chip-name">Prof. Mathieu Bouchard</span>
-                <span class="team-chip-role">Principal Investigator</span>
-              </div>
-            </button>
+            </article>
 
-            <button
-              class="team-chip"
-              data-person="adi"
-              type="button"
-            >
-              <div class="team-chip-avatar">
-                <img
-                  src="1736718621383.jpeg"
-                  alt="Portrait of Adithiyan Rajan"
-                />
+            <!-- Adi -->
+            <article class="card team-person-card" data-person="adi">
+              <div class="team-person-inner">
+                <div class="team-person-photo-box">
+                  <img
+                    src="1736718621383.jpeg"
+                    alt="Portrait of Adithiyan Rajan"
+                  />
+                </div>
+                <div class="team-person-text">
+                  <h3>Adithiyan Rajan</h3>
+                  <p class="role">Graduate Student</p>
+                </div>
               </div>
-              <div class="team-chip-text">
-                <span class="team-chip-name">Adithiyan Rajan</span>
-                <span class="team-chip-role">Graduate Student</span>
-              </div>
-            </button>
+            </article>
 
-            <button
-              class="team-chip"
-              data-person="phuong"
-              type="button"
-            >
-              <div class="team-chip-avatar">
-                <img
-                  src="profile.jpg"
-                  alt="Portrait of Phuong Tran"
-                />
+            <!-- Phuong -->
+            <article class="card team-person-card" data-person="phuong">
+              <div class="team-person-inner">
+                <div class="team-person-photo-box">
+                  <img
+                    src="profile.jpg"
+                    alt="Portrait of Phuong Tran"
+                  />
+                </div>
+                <div class="team-person-text">
+                  <h3>Phuong Tran</h3>
+                  <p class="role">Student Researcher</p>
+                </div>
               </div>
-              <div class="team-chip-text">
-                <span class="team-chip-name">Phuong Tran</span>
-                <span class="team-chip-role">Student Researcher</span>
-              </div>
-            </button>
+            </article>
 
-            <button
-              class="team-chip"
-              data-person="camila"
-              type="button"
-            >
-              <div class="team-chip-avatar">
-                <img
-                  src="1758660234229.png"
-                  alt="Portrait of Camila Estrada"
-                />
+            <!-- Camila -->
+            <article class="card team-person-card" data-person="camila">
+              <div class="team-person-inner">
+                <div class="team-person-photo-box">
+                  <img
+                    src="1758660234229.png"
+                    alt="Portrait of Camila Estrada"
+                  />
+                </div>
+                <div class="team-person-text">
+                  <h3>Camila Estrada</h3>
+                  <p class="role">Student Researcher</p>
+                </div>
               </div>
-              <div class="team-chip-text">
-                <span class="team-chip-name">Camila Estrada</span>
-                <span class="team-chip-role">Student Researcher</span>
-              </div>
-            </button>
+            </article>
 
-            <button
-              class="team-chip"
-              data-person="hamza"
-              type="button"
-            >
-              <div class="team-chip-avatar team-chip-placeholder">
-                <span>H</span>
+            <!-- Hamza -->
+            <article class="card team-person-card" data-person="hamza">
+              <div class="team-person-inner">
+                <div class="team-person-photo-box team-person-photo-placeholder">
+                  <span>H</span>
+                </div>
+                <div class="team-person-text">
+                  <h3>Hamza</h3>
+                  <p class="role">Student Researcher</p>
+                </div>
               </div>
-              <div class="team-chip-text">
-                <span class="team-chip-name">Hamza</span>
-                <span class="team-chip-role">Student Researcher</span>
-              </div>
-            </button>
+            </article>
           </div>
 
-          <!-- Minimal bio panel -->
-          <div class="card team-bio-panel">
+          <!-- Detail bar that changes on click -->
+          <div class="card team-detail-panel">
             <!-- Mathieu -->
-            <div class="team-bio" data-person="mathieu">
-              <h3>Prof. Mathieu Bouchard</h3>
-              <p>
-                Mathieu Bouchard is an assistant professor of strategy and organization at the
-                University of Ottawa's Telfer School of Management. He studies activism for
-                sustainable policymaking out of a belief that if we want to create a better
-                future, we need to act in the present.
-              </p>
-              <button
-                class="team-connect"
-                type="button"
-                data-link="https://www.linkedin.com/in/mathieubcd/"
-              >
-                Connect on LinkedIn
-              </button>
+            <div class="team-detail" data-person="mathieu">
+              <div class="team-detail-main">
+                <div class="team-detail-photo">
+                  <img
+                    src="1725373874280.jpeg"
+                    alt="Portrait of Prof. Mathieu Bouchard"
+                  />
+                </div>
+                <div class="team-detail-text">
+                  <h3>Prof. Mathieu Bouchard</h3>
+                  <p>
+                    Mathieu Bouchard is an assistant professor of strategy and organization at the
+                    University of Ottawa's Telfer School of Management. He studies activism for
+                    sustainable policymaking out of a belief that if we want to create a better
+                    future, we need to act in the present.
+                  </p>
+                </div>
+              </div>
+              <div class="team-detail-actions">
+                <a
+                  class="team-icon-btn linkedin"
+                  href="https://www.linkedin.com/in/mathieubcd/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Connect with Prof. Mathieu Bouchard on LinkedIn"
+                >
+                  in
+                </a>
+                <a
+                  class="team-icon-btn email"
+                  href="mailto:professor@example.com"
+                  aria-label="Email Prof. Mathieu Bouchard"
+                >
+                  @
+                </a>
+              </div>
             </div>
 
             <!-- Adi -->
-            <div class="team-bio" data-person="adi" hidden>
-              <h3>Adithiyan Rajan</h3>
-              <p>
-                Adithiyan Rajan is a Computer Science graduate student who specializes in
-                transforming cutting-edge AI and Machine Learning research into practical,
-                high-impact solutions for areas such as cybersecurity and real-time detection.
-              </p>
-              <button
-                class="team-connect"
-                type="button"
-                data-link="https://www.linkedin.com/in/adithiyanrajan/"
-              >
-                Connect on LinkedIn
-              </button>
+            <div class="team-detail" data-person="adi" hidden>
+              <div class="team-detail-main">
+                <div class="team-detail-photo">
+                  <img
+                    src="1736718621383.jpeg"
+                    alt="Portrait of Adithiyan Rajan"
+                  />
+                </div>
+                <div class="team-detail-text">
+                  <h3>Adithiyan Rajan</h3>
+                  <p>
+                    Adithiyan Rajan is a Computer Science graduate student who specializes in
+                    transforming cutting-edge AI and Machine Learning research into practical,
+                    high-impact solutions for areas such as cybersecurity and real-time detection.
+                  </p>
+                </div>
+              </div>
+              <div class="team-detail-actions">
+                <a
+                  class="team-icon-btn linkedin"
+                  href="https://www.linkedin.com/in/adithiyanrajan/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Connect with Adithiyan Rajan on LinkedIn"
+                >
+                  in
+                </a>
+                <a
+                  class="team-icon-btn email"
+                  href="mailto:student@example.com"
+                  aria-label="Email Adithiyan Rajan"
+                >
+                  @
+                </a>
+              </div>
             </div>
 
             <!-- Phuong -->
-            <div class="team-bio" data-person="phuong" hidden>
-              <h3>Phuong Tran</h3>
-              <p>
-                Phuong Tran is a Business Technology Management student at the Telfer School of
-                Management, exploring the intersection of emerging technologies, digital policy,
-                and user-centric design in research and practice.
-              </p>
-              <button
-                class="team-connect"
-                type="button"
-                data-link="https://www.linkedin.com/in/phuongtran0204/"
-              >
-                Connect on LinkedIn
-              </button>
+            <div class="team-detail" data-person="phuong" hidden>
+              <div class="team-detail-main">
+                <div class="team-detail-photo">
+                  <img
+                    src="profile.jpg"
+                    alt="Portrait of Phuong Tran"
+                  />
+                </div>
+                <div class="team-detail-text">
+                  <h3>Phuong Tran</h3>
+                  <p>
+                    Phuong Tran is a Business Technology Management student at the Telfer School of
+                    Management, exploring the intersection of emerging technologies, digital policy,
+                    and user-centric design in research and practice.
+                  </p>
+                </div>
+              </div>
+              <div class="team-detail-actions">
+                <a
+                  class="team-icon-btn linkedin"
+                  href="https://www.linkedin.com/in/phuongtran0204/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Connect with Phuong Tran on LinkedIn"
+                >
+                  in
+                </a>
+                <a
+                  class="team-icon-btn email"
+                  href="mailto:student@example.com"
+                  aria-label="Email Phuong Tran"
+                >
+                  @
+                </a>
+              </div>
             </div>
 
             <!-- Camila -->
-            <div class="team-bio" data-person="camila" hidden>
-              <h3>Camila Estrada</h3>
-              <p>
-                Camila Estrada is an accounting student at the University of Ottawa involved in
-                research on cycling activism, with an interest in how people are motivated to
-                create change in their communities.
-              </p>
-              <button
-                class="team-connect"
-                type="button"
-                data-link="https://www.linkedin.com/in/camila-estrada-523s/"
-              >
-                Connect on LinkedIn
-              </button>
+            <div class="team-detail" data-person="camila" hidden>
+              <div class="team-detail-main">
+                <div class="team-detail-photo">
+                  <img
+                    src="1758660234229.png"
+                    alt="Portrait of Camila Estrada"
+                  />
+                </div>
+                <div class="team-detail-text">
+                  <h3>Camila Estrada</h3>
+                  <p>
+                    Camila Estrada is an accounting student at the University of Ottawa involved in
+                    research on cycling activism, with an interest in how people are motivated to
+                    create change in their communities.
+                  </p>
+                </div>
+              </div>
+              <div class="team-detail-actions">
+                <a
+                  class="team-icon-btn linkedin"
+                  href="https://www.linkedin.com/in/camila-estrada-523s/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Connect with Camila Estrada on LinkedIn"
+                >
+                  in
+                </a>
+                <a
+                  class="team-icon-btn email"
+                  href="mailto:student@example.com"
+                  aria-label="Email Camila Estrada"
+                >
+                  @
+                </a>
+              </div>
             </div>
 
             <!-- Hamza -->
-            <div class="team-bio" data-person="hamza" hidden>
-              <h3>Hamza</h3>
-              <p>
-                Bio coming soon.
-              </p>
+            <div class="team-detail" data-person="hamza" hidden>
+              <div class="team-detail-main">
+                <div class="team-detail-photo">
+                  <div class="team-person-photo-placeholder">
+                    <span>H</span>
+                  </div>
+                </div>
+                <div class="team-detail-text">
+                  <h3>Hamza</h3>
+                  <p>
+                    Bio coming soon.
+                  </p>
+                </div>
+              </div>
+              <div class="team-detail-actions">
+                <!-- leave empty until you have his info -->
+              </div>
             </div>
           </div>
         </div>
       </section>
+          
 
       <!-- PODCAST -->
       <section id="podcast" class="section">
@@ -469,6 +561,7 @@
     <script src="script.js"></script>
   </body>
 </html>
+
 
 
 
