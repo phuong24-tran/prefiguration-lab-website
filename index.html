@@ -137,7 +137,7 @@
         </div>
       </section>
 
-          <!-- OUR TEAM -->
+                <!-- OUR TEAM -->
       <section id="team" class="section section-alt">
         <div class="container">
           <div class="section-heading">
@@ -148,137 +148,182 @@
             </p>
           </div>
 
-          <div class="grid team-grid">
-            <!-- Professor: Mathieu Bouchard -->
-            <article class="card team-card">
+          <!-- Featured professor -->
+          <article class="card team-card team-card-featured">
+            <div class="team-featured-photo-wrap">
               <img
                 src="1725373874280.jpeg"
                 alt="Portrait of Prof. Mathieu Bouchard"
-                style="width:80px;height:80px;border-radius:50%;object-fit:cover;margin-bottom:0.75rem;"
+                class="team-featured-photo"
               />
+            </div>
+            <div class="team-featured-body">
               <h3>Prof. Mathieu Bouchard</h3>
-              <p class="role">Principal Investigator</p>
-              <p>
+              <p class="role">Principal Investigator · Telfer School of Management</p>
+              <p class="team-bio-short">
                 Mathieu Bouchard is an assistant professor of strategy and organization at the
                 University of Ottawa's Telfer School of Management. He studies activism for
                 sustainable policymaking out of a belief that if we want to create a better future,
-                we need to act in the present. He likes bebop jazz, his daughter's choreographies,
-                and would like to learn chess but never finds the time.
+                we need to act in the present.
               </p>
-              <p class="meta">
+              <button class="team-toggle" type="button">
+                Learn more
+              </button>
+              <div class="team-bio-extra">
+                <p>
+                  He enjoys bebop jazz, his daughter's choreographies, and would like to learn chess
+                  but never finds the time.
+                </p>
+              </div>
+              <div class="team-links">
                 <a
                   href="https://www.linkedin.com/in/mathieubcd/"
-                  class="link"
+                  class="icon-linkedin"
                   target="_blank"
                   rel="noopener noreferrer"
+                  aria-label="Prof. Mathieu Bouchard on LinkedIn"
                 >
-                  LinkedIn
-                </a><br />
-                Telfer School of Management, University of Ottawa
-              </p>
-            </article>
-
-            <!-- Student: Phuong Tran -->
-            <article class="card team-card">
-              <img
-                src="profile.jpg"
-                alt="Portrait of Phuong Tran"
-                style="width:80px;height:80px;border-radius:50%;object-fit:cover;margin-bottom:0.75rem;"
-              />
-              <h3>Phuong Tran</h3>
-              <p class="role">Student Researcher</p>
-              <p>
-                Phuong Tran is a Business Technology Management student at the Telfer School of
-                Management, exploring the intersection of emerging technologies, digital policy, and
-                user-centric design. She works as a research assistant on AI governance and tech
-                policy, contributing to projects involving digital activism, data visualization, and
-                regulatory analysis. Her interests span cybersecurity, UX storytelling, and
-                public-sector innovation. She is passionate about transforming complex problems into
-                accessible, impactful solutions through research, design, and collaborative
-                innovation.
-              </p>
-              <p class="meta">
-                <a
-                  href="https://www.linkedin.com/in/phuongtran0204/"
-                  class="link"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  LinkedIn
+                  in
                 </a>
-              </p>
-            </article>
+              </div>
+            </div>
+          </article>
 
-            <!-- Student: Adithiyan Rajan -->
-            <article class="card team-card">
-              <img
-                src="1736718621383.jpeg"
-                alt="Portrait of Adithiyan Rajan"
-                style="width:80px;height:80px;border-radius:50%;object-fit:cover;margin-bottom:0.75rem;"
-              />
-              <h3>Adithiyan Rajan</h3>
-              <p class="role">Graduate Student Researcher</p>
-              <p>
-                Adithiyan Rajan is a Computer Science graduate student who specializes in transforming
-                cutting-edge AI and Machine Learning research into practical, high-impact solutions.
-                His work spans deploying Large Language Models to strengthen cybersecurity workflows,
-                building real-time detection systems, and developing applied intelligence tools that
-                address complex, multidisciplinary challenges. At the University of Ottawa, he works
-                with Prof. Mathieu Bouchard on research exploring how digital activism influences
-                technology policy, applying AI and LLM-based methods to analyze public records and
-                uncover insights into AI governance.
-              </p>
-              <p class="meta">
-                <a
-                  href="https://www.linkedin.com/in/adithiyanrajan/"
-                  class="link"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  LinkedIn
-                </a>
-              </p>
-            </article>
+          <!-- Students: horizontal scroll -->
+          <div class="team-students-wrapper">
+            <h3 class="team-subtitle">Student Researchers</h3>
+            <div class="team-students-scroller">
 
-            <!-- Student: Camila Estrada -->
-            <article class="card team-card">
-              <img
-                src="1758660234229.png"
-                alt="Portrait of Camila Estrada"
-                style="width:80px;height:80px;border-radius:50%;object-fit:cover;margin-bottom:0.75rem;"
-              />
-              <h3>Camila Estrada</h3>
-              <p class="role">Student Researcher</p>
-              <p>
-                Camila Estrada is an accounting student at the University of Ottawa and is currently
-                involved in research on cycling activism, where she is engaged in learning about what
-                motivates people to create change in their communities. She enjoys all things jazz and
-                music, and occasionally plays piano in her free time. She values using her time
-                thoughtfully and pursuing efforts that create lasting, positive change.
-              </p>
-              <p class="meta">
-                <a
-                  href="https://www.linkedin.com/in/camila-estrada-523s/"
-                  class="link"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  LinkedIn
-                </a>
-              </p>
-            </article>
+              <!-- Adithiyan first -->
+              <article class="card team-card team-card-compact">
+                <img
+                  src="1736718621383.jpeg"
+                  alt="Portrait of Adithiyan Rajan"
+                  class="team-avatar"
+                />
+                <h4>Adithiyan Rajan</h4>
+                <p class="role">Graduate Student Researcher</p>
+                <p class="team-bio-short">
+                  Adithiyan Rajan is a Computer Science graduate student who specializes in turning
+                  cutting-edge AI and Machine Learning research into practical, high-impact solutions.
+                </p>
+                <button class="team-toggle" type="button">
+                  Learn more
+                </button>
+                <div class="team-bio-extra">
+                  <p>
+                    His work spans deploying Large Language Models to strengthen cybersecurity workflows,
+                    building real-time detection systems, and developing applied intelligence tools that
+                    address complex, multidisciplinary challenges. At the University of Ottawa, he works
+                    with Prof. Mathieu Bouchard on research exploring how digital activism influences
+                    technology policy, applying AI and LLM-based methods to analyze public records and
+                    uncover insights into AI governance.
+                  </p>
+                </div>
+                <div class="team-links">
+                  <a
+                    href="https://www.linkedin.com/in/adithiyanrajan/"
+                    class="icon-linkedin"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Adithiyan Rajan on LinkedIn"
+                  >
+                    in
+                  </a>
+                </div>
+              </article>
 
-            <!-- Student: Hamza -->
-            <article class="card team-card">
-              <h3>Hamza</h3>
-              <p class="role">Student Researcher</p>
-              <p>
-                Bio coming soon.
-              </p>
-            </article>
+              <!-- You second -->
+              <article class="card team-card team-card-compact">
+                <img
+                  src="profile.jpg"
+                  alt="Portrait of Phuong Tran"
+                  class="team-avatar"
+                />
+                <h4>Phuong Tran</h4>
+                <p class="role">Student Researcher</p>
+                <p class="team-bio-short">
+                  Phuong Tran is a Business Technology Management student at the Telfer School of
+                  Management, exploring the intersection of emerging technologies, digital policy,
+                  and user-centric design.
+                </p>
+                <button class="team-toggle" type="button">
+                  Learn more
+                </button>
+                <div class="team-bio-extra">
+                  <p>
+                    She works as a research assistant on AI governance and tech policy, contributing
+                    to projects involving digital activism, data visualization, and regulatory analysis.
+                    Her interests span cybersecurity, UX storytelling, and public-sector innovation, and
+                    she is passionate about transforming complex problems into accessible, impactful
+                    solutions through research, design, and collaborative innovation.
+                  </p>
+                </div>
+                <div class="team-links">
+                  <a
+                    href="https://www.linkedin.com/in/phuongtran0204/"
+                    class="icon-linkedin"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Phuong Tran on LinkedIn"
+                  >
+                    in
+                  </a>
+                </div>
+              </article>
+
+              <!-- Camila third -->
+              <article class="card team-card team-card-compact">
+                <img
+                  src="1758660234229.png"
+                  alt="Portrait of Camila Estrada"
+                  class="team-avatar"
+                />
+                <h4>Camila Estrada</h4>
+                <p class="role">Student Researcher</p>
+                <p class="team-bio-short">
+                  Camila Estrada is an accounting student at the University of Ottawa currently
+                  involved in research on cycling activism.
+                </p>
+                <button class="team-toggle" type="button">
+                  Learn more
+                </button>
+                <div class="team-bio-extra">
+                  <p>
+                    She is engaged in learning about what motivates people to create change in their
+                    communities. She enjoys all things jazz and music, and occasionally plays piano in
+                    her free time. She values using her time thoughtfully and pursuing efforts that
+                    create lasting, positive change.
+                  </p>
+                </div>
+                <div class="team-links">
+                  <a
+                    href="https://www.linkedin.com/in/camila-estrada-523s/"
+                    class="icon-linkedin"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Camila Estrada on LinkedIn"
+                  >
+                    in
+                  </a>
+                </div>
+              </article>
+
+              <!-- Hamza last -->
+              <article class="card team-card team-card-compact">
+                <div class="team-avatar team-avatar-placeholder">H</div>
+                <h4>Hamza</h4>
+                <p class="role">Student Researcher</p>
+                <p class="team-bio-short">
+                  Bio coming soon.
+                </p>
+              </article>
+
+            </div>
           </div>
         </div>
       </section>
+
 
       <!-- PODCAST -->
       <section id="podcast" class="section">
@@ -434,4 +479,5 @@
     <script src="script.js"></script>
   </body>
 </html>
+
 
