@@ -333,98 +333,87 @@ body {
     display: flex;
   }
 }
-/* === Our Team – circle layout like Major Tom === */
+/* === Our Team – minimalist research strip === */
 
-.team-layout {
-  display: grid;
-  gap: 1.8rem;
+.team-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 1.5rem;
 }
 
-/* 3-column grid so prof can sit in the middle */
-.team-grid-circles {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 1.5rem 1.5rem;
-  justify-items: center;
-}
-
-/* Base circle button */
-.team-person {
-  background: none;
-  border: none;
-  padding: 0;
+.team-chip {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.5rem 0.9rem;
+  border-radius: 999px;
+  border: 1px solid #dddddd;
+  background-color: #ffffff;
   cursor: pointer;
-  text-align: center;
-  max-width: 180px;
-  color: inherit;
+  transition:
+    border-color 0.18s ease-out,
+    box-shadow 0.18s ease-out,
+    background-color 0.18s ease-out,
+    transform 0.18s ease-out;
 }
 
-.team-photo-wrap {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
+.team-chip:hover {
+  border-color: #bbbbbb;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.04);
+  transform: translateY(-1px);
+}
+
+.team-chip.active {
+  border-color: #8d0033; /* Telfer-ish red accent */
+  background-color: #fff6f9;
+  box-shadow: 0 6px 18px rgba(141, 0, 51, 0.08);
+}
+
+.team-chip-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 999px;
   overflow: hidden;
-  margin: 0 auto 0.6rem;
-  border: 3px solid #e3e3e3;
+  flex-shrink: 0;
+  background-color: #f0f0f0;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.team-photo-wrap img {
+.team-chip-avatar img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.team-photo-placeholder {
-  background-color: #f0f0f0;
-  color: #555;
+.team-chip-placeholder span {
   font-weight: 600;
-  font-size: 1.8rem;
+  color: #666;
 }
 
-.team-name {
-  font-weight: 600;
-  margin-bottom: 0.1rem;
+.team-chip-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
-.team-role {
-  font-size: 0.85rem;
+.team-chip-name {
+  font-size: 0.92rem;
+  font-weight: 600;
+}
+
+.team-chip-role {
+  font-size: 0.8rem;
   color: #666666;
 }
 
-/* Active state */
-.team-person.active .team-photo-wrap {
-  border-color: #8d0033; /* Telfer-ish red */
-  box-shadow: 0 0 0 3px rgba(141, 0, 51, 0.15);
-}
-
-/* Positioning in grid: prof center, others around */
-.team-person--prof {
-  grid-column: 2 / span 1; /* center first row */
-}
-
-.team-person--adi {
-  grid-column: 1 / span 1;
-}
-
-.team-person--phuong {
-  grid-column: 3 / span 1;
-}
-
-.team-person--camila {
-  grid-column: 1 / span 1;
-}
-
-.team-person--hamza {
-  grid-column: 3 / span 1;
-}
-
-/* Bio panel below grid */
+/* Bio card */
 
 .team-bio-panel {
-  max-width: 720px;
+  max-width: 700px;
   margin: 0 auto;
 }
 
@@ -432,50 +421,47 @@ body {
   margin-bottom: 0.25rem;
 }
 
-.team-bio-short {
+.team-bio p {
   font-size: 0.95rem;
   color: #444444;
 }
 
-.team-bio-long {
-  display: none;
-  margin-top: 0.4rem;
-  font-size: 0.95rem;
-  color: #444444;
-}
-
-.team-bio.show-long .team-bio-long {
-  display: block;
-}
-
-.team-learn {
-  margin-top: 0.6rem;
-  padding: 0.3rem 0.9rem;
-  font-size: 0.8rem;
+.team-connect {
+  margin-top: 0.8rem;
+  padding: 0.45rem 1.1rem;
   border-radius: 999px;
-  border: 1px solid #8d0033;
-  background-color: #ffffff;
-  color: #8d0033;
-  cursor: pointer;
-}
-
-.team-learn:hover {
-  background-color: #8d0033;
+  border: 1px solid #0a66c2;
+  background-color: #0a66c2;
   color: #ffffff;
+  font-size: 0.85rem;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
 }
 
-/* Mobile tweaks */
-@media (max-width: 768px) {
-  .team-grid-circles {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
+.team-connect::before {
+  content: "in";
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 1px solid #ffffff;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
 
-  .team-person--prof {
-    grid-column: 1 / span 2; /* full row on mobile */
-  }
+.team-connect:hover {
+  background-color: #084c92;
+  border-color: #084c92;
+}
 
-  .team-person--phuong,
-  .team-person--hamza {
-    grid-column: auto;
+/* Mobile tweak */
+@media (max-width: 600px) {
+  .team-chip {
+    width: 100%;
+    justify-content: flex-start;
   }
 }
